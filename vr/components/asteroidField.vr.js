@@ -3,10 +3,6 @@ import { AppRegistry, asset, Pano, VideoPano, Text, View, Sphere, PointLight, Am
 import Asteroid from './asteroid.vr.js'
 
 export default class AsteroidField extends Component {
-    constructor() {
-        super();
-    }
-
     render() {
         let numAsteroids = this.props.numAsteroids ? this.props.numAsteroids : 50;
         let asteroids = [];

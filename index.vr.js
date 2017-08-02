@@ -40,27 +40,12 @@ export default class reactVRDemo extends React.Component {
             ]
           }}
         >
-
           <Sphere
             widthSegments={50}
             heightSegments={20}
             texture='http://i.imgur.com/zNBDyNj.png'
           />
-
         </Animated.View>
-
-     
-          {/*<Model
-              source={{
-                obj: asset('asteroid1.obj')
-              }}
-              texture='http://i.imgur.com/NxNaanH.jpg'
-              style={{
-                transform: [
-                  { translate: [-100, -25, -125] }
-                ]
-              }}
-          />*/}
 
         <AsteroidField/>
 

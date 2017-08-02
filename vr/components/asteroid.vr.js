@@ -9,7 +9,6 @@ export default class Asteroid extends Component {
             x: -200, 
             y: -200,
             delay: 0,
-            duration: 30000,
             scale: 1,
             model: 1,
             translateZ: new Animated.Value(4000)
@@ -20,7 +19,7 @@ export default class Asteroid extends Component {
     translateAsteroid() {
         Animated.timing(this.state.translateZ, {
         toValue: -4000,
-        duration: 4000,//this.state.duration,
+        duration: 4000,
         delay: this.state.delay,
         easing: Easing.linear
         }).start( () => {
